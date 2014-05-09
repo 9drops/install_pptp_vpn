@@ -1,6 +1,7 @@
 #############################################
 #file:pptp vpn installing script
 #author:9drops
+#version 1.0
 #description:install_pptp_vpn.sh is a free software, 
 #it's for auto installing vpn in Redhat AS6 or Centos6
 #9drops web site: codingnote.net
