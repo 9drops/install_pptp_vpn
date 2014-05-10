@@ -77,7 +77,7 @@ echo "localip 172.16.36.1" >> /etc/pptpd.conf
 echo "remoteip 172.16.36.2-254" >> /etc/pptpd.conf
 echo "ms-dns 8.8.8.8" >> /etc/ppp/options.pptpd
 echo "ms-dns 8.8.4.4" >> /etc/ppp/options.pptpd
-echo "$2    pptpd	$3    *" >> /etc/ppp/chap-secrets
+echo "$1    pptpd	$2    *" >> /etc/ppp/chap-secrets
 
 iptables -A INPUT -i eth0 -p tcp --dport 1723 -j ACCEPT
 iptables -A INPUT -i eth0 -p gre -j ACCEPT
